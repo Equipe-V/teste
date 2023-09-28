@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registroDeLeitos.css">
+    <title>Registro de Leitos</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Leitos</h1>
+        <a href="panel.html" class="back-link">Voltar ao Painel Principal</a>
+    </header>
+
+    <section class="bed-form">
+        <h2>Adicionar ou Editar Leito</h2>
+        <form>
+            <label for="bedNumber">Número do Leito:</label>
+            <input type="text" id="bedNumber" name="bedNumber" required>
+
+            <label for="ward">Ala:</label>
+            <input type="text" id="ward" name="ward" required>
+
+            <label for="occupancyStatus">Status de Ocupação:</label>
+            <select id="occupancyStatus" name="occupancyStatus" required>
+                <option value="Ocupado">Ocupado</option>
+                <option value="Disponível">Disponível</option>
+            </select>
+
+            <label for="capacity">Capacidade Máxima:</label>
+            <input type="number" id="capacity" name="capacity" required>
+
+            <button type="submit">Salvar Leito</button>
+        </form>
+    </section>
+    <h1><a href="historicoDeNotificacoes.html">Proxima Pagina</a></h1>
+</body>
+</html>

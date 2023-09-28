@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="historicoDeNotificacoes.css">
+    <title>Histórico de Notificações</title>
+</head>
+<body>
+    <header>
+        <h1>Histórico de Notificações</h1>
+        <a href="panel.html" class="back-link">Voltar ao Painel Principal</a>
+    </header>
+
+    <section class="filter-options">
+        <h2>Filtros</h2>
+        <form>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="bed">Leito:</label>
+            <select id="bed" name="bed">
+                <option value="">Todos</option>
+                <option value="101">101</option>
+                <option value="102">102</option>
+                <!-- Adicione mais opções de leitos conforme necessário -->
+            </select>
+
+            <button type="submit">Filtrar</button>
+        </form>
+    </section>
+
+    <section class="notification-list">
+        <h2>Lista de Notificações</h2>
+        <ul id="notifications">
+            <!-- Notificações passadas serão adicionadas aqui dinamicamente -->
+        </ul>
+    </section>
+    <h1><a href="leituraQR.html">Proxima Pagina</a></h1>
+
+</body>
+</html>

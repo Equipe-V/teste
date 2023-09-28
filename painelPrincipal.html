@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="painelPrincipal.css">
+    <title>Painel Principal</title>
+</head>
+<body>
+    <header>
+        <h1>Painel Principal</h1>
+        <button id="logout">Sair</button>
+    </header>
+
+    <section class="notifications">
+        <h2>Notificações em Tempo Real</h2>
+        <ul id="notifications-list">
+            <!-- Notificações em tempo real serão adicionadas aqui dinamicamente -->
+        </ul>
+    </section>
+
+    <section class="beds">
+        <h2>Leitos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número do Leito</th>
+                    <th>Ala</th>
+                    <th>Status de Ocupação</th>
+                    <th>Capacidade Máxima</th>
+                </tr>
+            </thead>
+            <tbody id="beds-list">
+                <!-- Informações dos leitos serão adicionadas aqui dinamicamente -->
+            </tbody>
+        </table>
+    </section>
+    <h1><a href="detalhesDoLeito.html">Proxima Pagina</a></h1>
+</body>
+</html>
